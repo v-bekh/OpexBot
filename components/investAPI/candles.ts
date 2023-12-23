@@ -1,6 +1,7 @@
 import { Common } from "./common";
 import { Cache } from "./../cache";
 import {Time} from "../time";
+import {Price} from "../tradeSystem";
 
 interface IProps {
     instrumentId: string;
@@ -19,11 +20,6 @@ export interface Candle {
     volume: number,
     time: Date,
     isComplete: boolean
-}
-
-interface Price {
-    units: number,
-    nano: number
 }
 
 export class Candles extends Common
